@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SAMLServlet</servlet-name>
+  	<display-name>SAMLServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.swisscom.saml.sp.SAMLServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SAMLAssertionConsumer</servlet-name>
+  	<display-name>SAMLAssertionConsumer</display-name>
+  	<description></description>
+  	<servlet-class>com.swisscom.saml.sp.SAMLAssertionConsumer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>yxyx</servlet-name>
+  	<display-name>yxyx</display-name>
+  	<description></description>
+  	<servlet-class>yxyx</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SAMLServlet</servlet-name>
+  	<url-pattern>/SAMLServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SAMLAssertionConsumer</servlet-name>
+  	<url-pattern>/SAMLAssertionConsumer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>yxyx</servlet-name>
+  	<url-pattern>/yxyx</url-pattern>
+  </servlet-mapping>
+</web-app>

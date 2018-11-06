@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:AuthnRequest
+	AssertionConsumerServiceURL="https://www.example.org/SAML/Consumer"
+	Destination="https://portal.ejpd.admin.ch/idp/saml/hok/request"
+	ForceAuthn="false" ID="8019cfbe-d799-4f32-9995-cc2053a4dddb"
+	IsPassive="false" IssueInstant="2012-01-18T10:48:08.675Z"
+	ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+	Version="2.0" xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+	<saml2:Issuer
+		Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"
+		xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"> https://www.example.org/SAML/Issuer123 </saml2:Issuer>
+	<ds:Signature
+		xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod
+				Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+			<ds:SignatureMethod
+				Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" />
+			<ds:Reference
+				URI="#8019cfbe-d799-4f32-9995-cc2053a4dddb">
+				<ds:Transforms>
+					<ds:Transform
+						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+					<ds:Transform
+						Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+				</ds:Transforms>
+				<ds:DigestMethod
+					Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+				<ds:DigestValue>3CrMl4MY7x0Lyzg8bs/2UOSLdZA=</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue>
+			bPE2dqSqP8v6Xe/V7pjG7s72w2xtgvwgQcSDqT+V76Y6Fy0EnQBffDVgkHi9j7fp34pCicI6tug0RjOOg2EwWxQ1xsCdMKz5JzBHmylP2djuqaYBwudX/gZOKGWQN75jHKEHw5l6wbvlcPE237H62NNW4zLk6fqbb0j1Z3ZHwNdhuRJsPvAspTEgHa2R2oq5xoVTiXMIYOYzIOlEgKQqpivRIlfLx7+GrN+OJHJyzWuYKJMaRycZk0b6LWr6ZpaaUQ67V6j/zapMnAfM/NLKtLm/VqZZV5g37jEI0UAWDpkFMEJgmeb4G1ZuzZPVLDBop5YrIEuSWZlGnu7fbQ0+SA==
+		</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>
+					MIIERTCCA-y2gAwIBAgIBBTANBgkqhkiG9w0BAQQFADBMMQswCQYDVQQGEwJDSDENMAsGA1UEBxMEQmVybjENMAsGA1UEChMERUpQRDEMMAo-GA1UECxMDSVNDMREwDwYDVQQDEwhpZG1ib3hDQTAeFw0xMTExMDkxNjEwMDNaFw0yMTExMDYxNjEwMDNaMFAxCzAJBgNVBA-YTAkNIMQ0wCwYDVQQHEwRCZXJuMQ0wCwYDVQQKEwRFSlBEMQwwCgYDVQQLEwNJU0MxFTATBgNVBAMTDHRlc3RUZWNoVXNlcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggE-BALiBq9g7JWjNDB6gP2OoPVQW+vw89n2fz2mHuYfJZnqnEJBvDURnuxl0TbJiTHzkhQUFnHWBI564sVAyY82aBpKj7kQFY1Zs2yEERD8+bDsezWp3FdeDtnVUms5KohShsoKZi9gYsdnRzsM8OOzidBDzlR7sqRrVTBeQnU1DGjOpotWSVhy0yDbDx4WyYX5S/a9hZ9k/E1HNH0wesfonanrbLSNkuYxfLKcv7FgyD3V+oXB8dmaaFIT2Ze+lz0obtumaLp1QgC/yDhDsZHOA24gX7qbPjZ1m5xutk4XuuhCbbdJxTZx4/GxqViaYbPsA6gZxIZ7+y2SAZYwJUU7RGmcCAwEAAaOCASwwggEoMAkGA1UdEwQCMAAwPwYJYI-ZIAYb4QgENBDIWME5ldmlzIEtleUJveCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUgdXNpbmcgT3BlblNTTDALBgNVHQ8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBS4yxPXgGqrfOMcOmh1ol+7lbwaZjB8BgNVHSMEdT-BzgBQM1GL+JeI8tQlWm9Qc+ayxF4Na26FQpE4wTDELMAkGA1UEBhMCQ0gxDTALBgNVBAcTBEJlcm4xDTALBgNVBAoTBEVKUEQxDDAKBgNVBAs-TA0lTQzERMA8GA1UEAxMIaWRtYm94Q0GCCQCm8wDx4Spj9TARBglghkgBhvhCAQEEBAMCBsAwDQYJKoZIhvcNAQEEBQADggE-BACe4R4Beyc7ELk14Qgqp0sySwboHx0FZYqvWkEnBYH5KIRvJfTFoROVDgyg4VpercQqyOED6QipBLPWUn8IQg6zdLpPlQ0yjAFvjAyhnhYlLcl03gsj868u/ksAbnbVXEJmPoYXMu02nobVttP6iVkgqterbiFC3U7Lvl2eGOvSnA3ZD4mlEeeanMzMDnK-Pmh0Ulr87XHBJ+5VYWXJTdp60ScpEQbVc3THS+++Q+NWVYQcCRwtximcvwIdvp0Q2p/phz6SC4TBW+8ZiZ3lz2FTZEzD/Zl67CXYyEudwygOlm8XjiKvIMKCj0JNarRBAdfY5ZscSut8ImjnmobdAGjjQ=
+				</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+	</ds:Signature>
+</saml2p:AuthnRequest>
